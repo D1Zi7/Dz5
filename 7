@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+class Main {
+    static Boolean DogCreated = false;
+    static Boolean CatCreated = false;
+    public static void main (String[] args)
+
+{
+    CreateDog();
+    CreateCat();
+    Inf();    
+}
+static void CreateDog()
+{
+    System.out.println("Собака Создана ");
+    DogCreated = true;
+}
+static void CreateCat()
+{
+    System.out.println("Кошака Создана ");
+    CatCreated = true;
+}
+public static void dogSpeak()
+{
+    System.out.print("[dogSpeak]Собака ");
+    System.out.println("Гав ");
+}
+public static void catSpeak()
+{
+    System.out.print("[catSpeak]Кошка ");
+    System.out.println("Мяу ");
+}
+public static void Inf ()
+{
+    System.out.println("[Inf] Информация о питомце ");
+    if(DogCreated){
+System.out.println("Собака Created ");
+System.out.println("Гав");
+System.out.println("Возраст : 3");
+    }
+   System.out.println("[Inf] Информация о питомце ");
+   if(CatCreated){
+System.out.println("Кошка Created ");
+System.out.println("Мяу");
+System.out.println("Возраст : 4");
+   }
+}
+}
